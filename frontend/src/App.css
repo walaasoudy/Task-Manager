@@ -209,3 +209,47 @@ body {
     gap: 15px;
   }
 }
+
+.update-task-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 300px;
+}
+
+.update-task-modal input,
+.update-task-modal textarea {
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.update-task-modal button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.update-task-modal button[type='button'] {
+  background-color: #ccc;
+}
+
+.update-task-modal button:hover {
+  background-color: #0056b3;
+}
+
+.update-task-modal button[type='button']:hover {
+  background-color: #aaa;
+}
