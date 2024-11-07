@@ -43,12 +43,19 @@ Folder Structure
 
 task-management-api/
 ├── backend/
-│   ├── config/            # Configuration files like DB connection
-│   ├── models/            # MongoDB models (e.g., Task model)
-│   ├── routes/            # Express route handlers (e.g., taskRoutes.js)
-│   ├── server.js          # Main server file
-│   └── .env               # Environment variables
-└── package.json           # NPM package file
+
+│   ├── config/   
+ # Configuration files like DB connection
+│   ├── models/     
+# MongoDB models (e.g., Task model)
+│   ├── routes/  
+# Express route handlers (e.g., taskRoutes.js)
+│   ├── server.js  
+# Main server file
+│   └── .env     
+# Environment variables
+└── package.json 
+# NPM package file
 
 ### Approach
 
