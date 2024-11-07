@@ -43,8 +43,8 @@ For detailed API endpoints, see the API Documentation.
 
 ## Approach
 
-Backend Framework: Express.js is used for building the RESTful API. It is easy to use and provides powerful routing capabilities.
-Database: MongoDB is used as the database to store task information. The Mongoose ODM is used to interact with the database.
-CRUD Operations: The API supports basic CRUD (Create, Read, Update, Delete) operations on tasks.
-Environment Variables: Sensitive data like the MongoDB connection string is stored in the .env file.
-CORS: Cross-origin resource sharing (CORS) is enabled to allow requests from any origin.
+-Backend Framework: Express.js is used for building the RESTful API. It is easy to use and provides powerful routing capabilities.
+-Database: MongoDB is used as the database to store task information. The Mongoose ODM is used to interact with the database.
+-CRUD Operations: The API supports basic CRUD (Create, Read, Update, Delete) operations on tasks.
+-Environment Variables: Sensitive data like the MongoDB connection string is stored in the .env file.
+-CORS: Cross-origin resource sharing (CORS) is enabled to allow requests from any origin.
