@@ -1,0 +1,84 @@
+API Documentation for Task Management
+Base URL: http://localhost:5000/api/tasks
+
+Methods:
+
+GET /
+
+Description: Fetch all tasks from the database.
+Response: Returns a JSON array of all tasks.
+Example:
+json
+Copy code
+[
+  {
+    "_id": "60c72b8f9b1e8b3d6f1c8b12",
+    "name": "Task 1",
+    "description": "Description of task 1",
+    "status": "pending"
+  },
+  {
+    "_id": "60c72b8f9b1e8b3d6f1c8b13",
+    "name": "Task 2",
+    "description": "Description of task 2",
+    "status": "completed"
+  }
+]
+Response Code: 200 OK
+POST /
+
+Description: Create a new task.
+Request Body:
+json
+Copy code
+{
+  "name": "New Task",
+  "description": "Description of the new task",
+  "status": "pending"
+}
+Response: Returns the created task with a status of 201.
+Example:
+json
+Copy code
+{
+  "_id": "60c72b8f9b1e8b3d6f1c8b14",
+  "name": "New Task",
+  "description": "Description of the new task",
+  "status": "pending"
+}
+Response Code: 201 Created
+PUT /:id
+
+Description: Update a task by ID.
+Parameters: id - Task ID
+Request Body:
+json
+Copy code
+{
+  "name": "Updated Task Name",
+  "description": "Updated task description",
+  "status": "completed"
+}
+Response: Returns the updated task.
+Example:
+json
+Copy code
+{
+  "_id": "60c72b8f9b1e8b3d6f1c8b12",
+  "name": "Updated Task Name",
+  "description": "Updated task description",
+  "status": "completed"
+}
+Response Code: 200 OK
+DELETE /:id
+
+Description: Delete a task by ID.
+Parameters: id - Task ID
+Response: Returns a message indicating the task was deleted.
+Example:
+json
+Copy code
+{
+  "message": "Task deleted"
+}
+Response Code: 200 OK
